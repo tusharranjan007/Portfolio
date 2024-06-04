@@ -20,11 +20,27 @@
 }
 
 
-body {
+
+html,body {
+    height: 100%;
 	font-family: "Open Sans", sans-serif;
 	font-optical-sizing: auto;
 	font-style: normal;
 	font-size: 20px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper {
+    flex: 1; 
+}
+ 
+main {
+    flex: 1;
 }
 
 a {
@@ -711,6 +727,239 @@ h3 {
     }
 }
 
+.associations {
+    max-width: 1200px;
+    margin: auto;
+    background-color: var(--base-100);
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-top: 30px;
+    text-align: center;
+    flex: 1; /* Ensure it takes the remaining space */
+}
+
+.associations h1 {
+    font-size: 2.5rem;
+    color: var(--blue-800);
+    margin-bottom: 20px;
+}
+
+.associations ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.associations ul li {
+    background-color: var(--blue-100);
+    color: var(--base-800);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+}
+
+.associations ul li:hover {
+    background-color: var(--blue-400);
+    color: var(--base-100);
+    transform: translateY(-10px);
+}
+
+.associations ul li a {
+    color: var(--blue);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.25rem;
+    transition: color 0.3s ease;
+}
+
+.associations ul li a:hover {
+    color: var(--base-100);
+}
+
+.associations ul li p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: var(--base-800);
+    transition: color 0.3s ease;
+}
+
+.associations ul li:hover p {
+    color: var(--base-100);
+}
+
+@media (max-width: 1024px) {
+    .associations {
+        padding: 20px;
+    }
+
+    .associations h1 {
+        font-size: 2rem;
+    }
+
+    .associations ul li {
+        padding: 15px;
+    }
+
+    .associations ul li a {
+        font-size: 1rem;
+    }
+
+    .associations ul li p {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .associations {
+        padding: 15px;
+    }
+
+    .associations h1 {
+        font-size: 1.75rem;
+    }
+
+    .associations ul li {
+        padding: 10px;
+    }
+
+    .associations ul li a {
+        font-size: 0.875rem;
+    }
+
+    .associations ul li p {
+        font-size: 0.75rem;
+    }
+}
+
+.contact {
+    background-color: var(--primary);
+    border-radius: 30px;
+    padding: 30px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 2.5rem;
+    color: var(--base-400);
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.25rem;
+    color: var(--base-400);
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--base-100);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact form label {
+    font-weight: 600;
+    color: var(--base-800);
+    font-size: 1.25rem;
+}
+
+.contact form input,
+.contact form textarea {
+    padding: 15px;
+    border: 1px solid var(--base-400);
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: var(--background);
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact form button {
+    align-self: center;
+    padding: 10px 30px;
+    background-color: var(--secondary);
+    color: var(--base-100);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact form button:hover {
+    background-color: var(--accent);
+    transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+    .contact {
+        padding: 20px;
+    }
+
+    .contact h1 {
+        font-size: 2rem;
+    }
+
+    .contact p {
+        font-size: 1rem;
+    }
+
+    .contact form {
+        padding: 20px;
+    }
+
+    .contact form label {
+        font-size: 1rem;
+    }
+
+    .contact form button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact {
+        padding: 15px;
+    }
+
+    .contact h1 {
+        font-size: 1.75rem;
+    }
+
+    .contact p {
+        font-size: 0.875rem;
+    }
+
+    .contact form {
+        padding: 15px;
+    }
+
+    .contact form label {
+        font-size: 0.875rem;
+    }
+
+    .contact form button {
+        font-size: 0.875rem;
+    }
+}
+
+
 
 footer {
     text-align: center;
@@ -718,22 +967,28 @@ footer {
     background-color: var(--base-100);
     border-top: 1px solid rgba(0,0,0,0.1);
 }
+
 footer p {
     margin-bottom: 10px;
 }
+
 footer ul {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 15px;
+    padding: 0;
 }
+
 footer ul li {
     display: inline;
 }
+
 footer ul li a {
     color: var(--blue);
     text-decoration: none;
 }
+
 footer ul li a:hover {
     text-decoration: underline;
 }
