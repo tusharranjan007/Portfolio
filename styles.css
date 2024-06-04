@@ -451,7 +451,7 @@ h3 {
     }
 }
 .bento .bento-grid .bento-item:nth-child(2) {
-    grid-column: span 2;
+    grid-column: span 1;
     grid-row: span 1;
 }
 @media (max-width: 1024px) {
@@ -470,4 +470,3 @@ h3 {
         grid-row: span 2;
     }
 }
-
