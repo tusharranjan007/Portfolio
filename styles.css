@@ -128,3 +128,112 @@ header nav .mobile-toggle {
         right: 20px;
     }
 }
+
+section {
+    max-width: 1440px;
+    margin: auto;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+@media (max-width: 1440px) {
+    section {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: var(--blue);
+    color: var(--base-100);
+    border-radius: 10px;
+    transition: ease 0.3s all;
+}
+.button:hover {
+    text-decoration: none;
+    background-color: var(--base-800);
+}
+.button.white {
+    background-color: white;
+    color: var(--base-800);
+}
+.button.white:hover {
+    background-color: var(--base-100);
+    color: var(--base);
+}
+.button.black {
+    background-color: black;
+    color: white;
+}
+.button.black:hover {
+    background-color: var(--base);
+    color: var(--base-100);
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+h1 small {
+    display: block;
+    font-weight: 100;
+}
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 48px;
+    }
+}
+
+.hero {
+    display: flex;
+}
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+    }
+}
+.hero .hero-blue {
+    flex: 1;
+    background-color: var(--blue-100);
+    border-radius: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero .hero-blue span {
+    display: none;
+}
+@media (max-width: 768px) {
+    .hero .hero-blue span {
+        display: none;
+    }
+}
+.hero .hero-blue .call-to-action {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.hero .hero-blue .call-to-action a {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.hero .hero-blue .social-links a:hover {
+    text-decoration: none;
+}
+.hero .hero-yellow {
+    flex: 1;
+    background-color: var(--yellow);
+    border-radius: 30px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.hero .hero-yellow img {
+    margin-top: -60px;
+    max-width: 420px;
+    margin-bottom: -10px;
+}
