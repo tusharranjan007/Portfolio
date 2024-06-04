@@ -300,3 +300,37 @@ h3 {
     margin-bottom: 20px;
     color: var(--base-800);
 }
+
+.skills .holder-blue {
+    background-color: var(--blue-100);
+    border-radius: 30px;
+    padding: 30px;
+    display: flex;
+}
+@media (max-width: 1024px) {
+    .skills .holder-blue {
+        flex-direction: column;
+    }
+}
+.skills .holder-blue .left-column {
+    flex: 1;
+}
+.skills .holder-blue .left-column ul {
+    list-style-type: none;
+    gap: 10px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+}
+.skills .holder-blue .left-column ul li {
+    display: inline-block;
+    background-color: var(--blue-400);
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.skills .holder-blue .right-column {
+    flex: 1;
+}
+.skills .holder-blue .right-column p {
+    margin-bottom: 20px;
+}
