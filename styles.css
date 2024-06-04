@@ -25,7 +25,6 @@ body {
 	font-optical-sizing: auto;
 	font-style: normal;
 	font-size: 20px;
-	padding-bottom:1000px;
 }
 
 a {
@@ -469,4 +468,96 @@ h3 {
         grid-column: span 3;
         grid-row: span 2;
     }
+}
+
+.about-me {
+    background-color: var(--blue-100);
+    border-radius: 30px;
+    padding: 30px;
+    margin-top: 30px;
+}
+.about-me h1 {
+    font-size: 2.5rem;
+    color: var(--blue-800);
+    margin-bottom: 20px;
+}
+.about-me p {
+    font-size: 1.25rem;
+    color: var(--base-800);
+    margin-bottom: 20px;
+}
+.about-me ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+.about-me ul li {
+    background-color: var(--blue-400);
+    color: var(--base-800);
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+@media (max-width: 1024px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+    .about-me {
+        padding: 20px;
+    }
+    .about-me h1 {
+        font-size: 2rem;
+    }
+    .about-me p {
+        font-size: 1rem;
+    }
+    .about-me ul li {
+        padding: 10px;
+    }
+}
+
+.spotify-playlist {
+    text-align: center;
+    margin-top: 30px;
+}
+.spotify-playlist h2 {
+    font-size: 2rem;
+    color: var(--blue-800);
+    margin-bottom: 20px;
+}
+.spotify-playlist iframe {
+    border-radius: 20px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--base-100);
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+footer p {
+    margin-bottom: 10px;
+}
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+footer ul li {
+    display: inline;
+}
+footer ul li a {
+    color: var(--blue);
+    text-decoration: none;
+}
+footer ul li a:hover {
+    text-decoration: underline;
 }
