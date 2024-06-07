@@ -34,3 +34,4 @@ document.querySelectorAll('.button').forEach(button => {
         this.style.transform = 'scale(1)';
     });
 });
+
